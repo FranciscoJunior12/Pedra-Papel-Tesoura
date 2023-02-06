@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo - Pedra_Papel_tesoura</title>
+    <link rel="stylesheet" href="styles/main-jogo.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+
+            <h3>1ª Rodada</h3>
+
+            <div class="flex0">
+                <div class="div-hold">
+                    <div class="flex1"><img src="img/icon-hold.png"></div>
+                    <p>Jogador</p>
+                    <p>0/3</p>
+                </div>
+                <div class="flex2">
+
+                    <button class="btn-jogar">Jogar</button>
+
+                    <p id="resultado"></p>
+                </div>
+                <div class="div-hold ">
+                    <div class="flex1"><img src="img/icon-hold.png"></div>
+                    <p>Robô</p>
+                    <p>0/3</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <div class="div-img opcoes">
+            <input type="radio" name="grupo" id="pedra">
+            <input type="radio" name="grupo" id="papel">
+            <input type="radio" name="grupo" id="tesoura">
+            <label for="pedra">
+                <div class="flex1"><img src="img/icon-rock.svg" alt="pedra"></div>
+            </label>
+            <label for="papel">
+                <div class="flex1"><img src="img/icon-paper.svg" alt="papel"></div>
+            </label>
+            <label for="tesoura">
+                <div class="flex1"><img src="img/icon-scissors.svg" alt="tesoura"></div>
+            </label>
+        </div>
+        <div class="div-btn">
+            <button><a href="main-jogo.html">Resetar</a></button>
+            <button><a href="index.html">Sair</a></button>
+        </div>
+
+    </div>
+</body>
+
+</html>
