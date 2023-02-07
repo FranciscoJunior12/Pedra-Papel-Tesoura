@@ -15,24 +15,26 @@
 
         <div class="container">
 
-            <h3>1ª Rodada</h3>
+            <h3 id="rodada">1ª Rodada</h3>
 
             <div class="flex0">
                 <div class="div-hold">
-                    <div class="flex1"><img src="img/icon-hold.png"></div>
+                    <div class="flex1"><img src="img/icon-hold.png" id="opcao-jogador"></div>
                     <p>Jogador</p>
-                    <p>0/3</p>
+                    <p id="placar-jogador">0/3</p>
                 </div>
                 <div class="flex2">
 
-                    <button class="btn-jogar">Jogar</button>
+                    <input type="button" id="btn-jogar" onclick="inicio()" value="Jogar">
 
-                    <p id="resultado"></p>
+                    <span>
+                        <p id="resultado"></p>
+                    </span>
                 </div>
                 <div class="div-hold ">
-                    <div class="flex1"><img src="img/icon-hold.png"></div>
+                    <div class="flex1"><img src="img/icon-hold.png" id="opcao-robo"></div>
                     <p>Robô</p>
-                    <p>0/3</p>
+                    <p id="placar-robo">0/3</p>
                 </div>
             </div>
 
@@ -41,27 +43,28 @@
 
 
 
-
         <div class="div-img opcoes">
-            <input type="radio" name="grupo" id="pedra">
-            <input type="radio" name="grupo" id="papel">
-            <input type="radio" name="grupo" id="tesoura">
+            <input type="radio" name="grupo" id="pedra" onclick="opcao();">
+            <input type="radio" name="grupo" id="papel" onclick="opcao();">
+            <input type="radio" name="grupo" id="tesoura" onclick="opcao();">
             <label for="pedra">
                 <div class="flex1"><img src="img/icon-rock.svg" alt="pedra"></div>
             </label>
             <label for="papel">
-                <div class="flex1"><img src="img/icon-paper.svg" alt="papel"></div>
+                <div class="flex1"><img src="img/icon-paper1.png" alt="papel"></div>
             </label>
             <label for="tesoura">
-                <div class="flex1"><img src="img/icon-scissors.svg" alt="tesoura"></div>
+                <div class="flex1"><img src="img/icon-scissors1.png" alt="tesoura"></div>
             </label>
         </div>
         <div class="div-btn">
-            <button><a href="main-jogo.html">Resetar</a></button>
+            <button onclick="novoJogo()">Resetar</button>
             <button><a href="index.html">Sair</a></button>
         </div>
 
     </div>
+
+    <script src="script/Script.js"></script>
 </body>
 
 </html>
