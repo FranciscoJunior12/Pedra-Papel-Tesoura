@@ -8,7 +8,8 @@ let tesoura = document.getElementById("tesoura");
 let resultado = document.getElementById("resultado");
 let pontos_jogador = 0;
 let pontos_robo = 0;
-let rodada = 0;
+let rodada = document.getElementById("rodada");
+var contador = 1;
 
 
 
@@ -124,7 +125,8 @@ function opcao() {
 
 
 function proximaRodada() {
-
+    contador++;
+    rodada.innerHTML = contador + "ª Rodada"
     document.getElementById("resultado").innerHTML = " ";
     document.getElementById("btn-jogar").value = "Jogar";
     document.getElementById("opcao-robo").src = "img/icon-hold.png";
@@ -152,6 +154,8 @@ function novoJogo() {
     papel.checked = false;
     pedra.checked = false;
     tesoura.checked = false;
+    contador = 1;
+    rodada.innerHTML = contador + "ª Rodada";
 
 }
 
