@@ -20,7 +20,7 @@ function inicio() {
 
         jogar();
 
-    } else if (document.getElementById("btn-jogar").value == "Proxima rodada") {
+    } else if (document.getElementById("btn-jogar").value == "Próxima rodada") {
 
         proximaRodada();
 
@@ -61,7 +61,7 @@ function jogar() {
         if ((pedra.checked == true && sorteio == 0) || (papel.checked == true && sorteio == 1) || (tesoura.checked == true && sorteio == 2)) {
 
             document.getElementById("resultado").innerHTML = "Empate";
-            document.getElementById("btn-jogar").value = "Proxima rodada";
+            document.getElementById("btn-jogar").value = "Próxima rodada";
 
 
             //analizar se o jogador ganhou a rodada
@@ -77,7 +77,7 @@ function jogar() {
 
             } else {
                 document.getElementById("placar-jogador").innerHTML = pontos_jogador + "/3";
-                document.getElementById("btn-jogar").value = "Proxima rodada";
+                document.getElementById("btn-jogar").value = "Próxima rodada";
             }
 
 
@@ -94,7 +94,7 @@ function jogar() {
 
             } else {
                 document.getElementById("placar-robo").innerHTML = pontos_robo + "/3";
-                document.getElementById("btn-jogar").value = "Proxima rodada";
+                document.getElementById("btn-jogar").value = "Próxima rodada";
             }
 
         }
