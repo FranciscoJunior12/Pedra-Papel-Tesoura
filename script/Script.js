@@ -73,7 +73,7 @@ function jogar() {
             if (pontos_jogador == 3) {
                 document.getElementById("placar-jogador").innerHTML = pontos_jogador + "/3";
                 document.getElementById("btn-jogar").value = "Novo jogo";
-                alert("jogou terminou, jogador venceu");
+                var parabens =setTimeout("alert('jogou terminou, jogador venceu');",800) ;
 
             } else {
                 document.getElementById("placar-jogador").innerHTML = pontos_jogador + "/3";
@@ -90,7 +90,8 @@ function jogar() {
             if (pontos_robo == 3) {
                 document.getElementById("placar-robo").innerHTML = pontos_robo + "/3";
                 document.getElementById("btn-jogar").value = "Novo jogo";
-                alert("jogou terminou, Robo venceu.");
+                var parabens =setTimeout("alert('jogou terminou, robô venceu');",800) ;
+              
 
             } else {
                 document.getElementById("placar-robo").innerHTML = pontos_robo + "/3";
